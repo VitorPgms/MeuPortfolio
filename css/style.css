@@ -20,7 +20,7 @@
 
 html {
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -116,6 +116,7 @@ span {
     font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
 }
 
 .social-media a:hover {
