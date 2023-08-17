@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    --bg-color: #000;
+    --second-bg-color: #231F20;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #db1b2b;
 }
 
 html {
@@ -171,6 +171,8 @@ span {
     background: var(--second-bg-color);
 }
 
+/*About Section*/
+
 .about-img img{
     width: 35vw;
 }
@@ -195,46 +197,101 @@ span {
     margin: 2rem 0 3rem;
 }
 
-.services h2 {
-    margin-bottom: 5rem;
-}
+/*******/
 
-.services-container {
+/*Skills Section*/
+
+.skill-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center;
 }
 
-.services-container .services-box {
-    flex: 1 1 30rem;
-    background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: 0.5s ease;
+.skill h2{
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-size: 16px;
 }
 
-.services-container .services-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.02);
+.progress-bar {
+    background-color: var(--text-color);
+    width: 600px;
+    height: 1rem;
+    border-radius: 1rem;
 }
 
-.services-box i{
-    font-size: 7rem;
-    color: var(--main-color);
+.progress-bar div{
+    height: 1rem;
+    border-radius: 0.5rem;
+    width: 0%;
 }
 
-.services-box h3 {
-    font-size: 2.6rem;
+.progress-bar div span {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: var(--bg-color);
+    float: right;
+    margin-top: -1.5rem;
+    margin-right: -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.services-box p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+.html {
+    background: blue;
+    animation: html 1s linear forwards;
 }
+.css {
+    background: yellow;
+    animation: css 1s linear forwards;
+}
+.js {
+    background: yellowgreen;
+    animation: js 1s linear forwards;
+}
+.mysql {
+    background: purple;
+    animation: mysql 1s linear forwards;
+}
+.vue {
+    background: crimson;
+    animation: vue 1s linear forwards;
+}
+
+@keyframes html{
+    100% {
+        width: 61.41%;
+    }
+}
+@keyframes css{
+    100% {
+        width: 19.68%;
+    }
+}
+@keyframes js{
+    100% {
+        width: 18.91%;
+    }
+}
+@keyframes mysql{
+    100% {
+        width: 18%;
+    }
+}
+@keyframes vue{
+    100% {
+        width: 5%;
+    }
+}
+
+/******/
+
+/*Portfolio Section*/
 
 .portfolio {
     background: var(--second-bg-color);
@@ -314,6 +371,10 @@ span {
     color: var(--second-bg-color);
 }
 
+/*****/
+
+/*Contact Section*/
+
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -354,6 +415,10 @@ span {
     cursor: pointer;
 }
 
+/******/
+
+/*Footer*/
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -385,6 +450,10 @@ span {
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
+
+/*****/
+
+/*Responsividade*/
 
 
 @media (max-width: 1200px){
@@ -519,3 +588,5 @@ span {
         margin-top: 2rem;
     }
 }
+
+/********/
