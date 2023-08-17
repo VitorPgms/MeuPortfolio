@@ -558,15 +558,15 @@ span {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
+
+    .progress-bar {
+        width: 330px;
+    }
 }
 
 @media (max-width: 450px) {
     html {
         font-size: 50%;
-    }
-
-    .progress-bar {
-        width: 400px;
     }
 
     .contact form .input-box input {
@@ -583,9 +583,6 @@ span {
         width: 90vw;
     }
 
-    .progress-bar {
-        width: 300px;
-    }
 
     .footer {
         flex-direction: column-reverse;
